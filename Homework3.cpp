@@ -1,13 +1,13 @@
-//Çàäàíèå 1.
+//Task 1.
 #include <iostream>
 
 int main() {
     int num;
-    std::cout << "Ââåäèòå ÷èñëî áîëüøå íóëÿ: ";
+    std::cout << "Please enter a positive number: ";
     std::cin >> num;
 
     if (num < 1) {
-        std::cout << "×èñëî äîëæíî áûòü áîëüøå íóëÿ!" << std::endl;
+        std::cout << "The number must be greater than zero!" << std::endl;
         return 1;
     }
 
@@ -19,16 +19,16 @@ int main() {
 
     return 0;
 }
-//Çàäàíèå 2.
+//Task 2.
 #include <iostream>
 
 int main() {
     int num;
-    std::cout << "Ââåäèòå ÷èñëî: ";
+    std::cout << "Please enter a positive number: ";
     std::cin >> num;
 
     if (num < 0) {
-        std::cout << "×èñëî äîëæíî áûòü íåîòðèöàòåëüíûì!" << std::endl;
+        std::cout << "The number must be greater than zero!" << std::endl;
         return 1;
     }
 
@@ -37,20 +37,20 @@ int main() {
         sum += num % 10;
         num /= 10;
     }
-    std::cout << "Ñóììà öèôð ðàâíà " << sum << std::endl;
+    std::cout << "The sum is " << sum << std::endl;
 
     return 0;
 }
-//Çàäàíèå 3.
+//Task 3.
 #include <iostream>
 
 int calculateTotalDistance(int days) {
-    int distance = 15; // Ðàññòîÿíèå ïåðâîãî äíÿ
-    int totalDistance = distance; // Îáîçíà÷èì îáùååå ðàññòîÿíèå
+    int distance = 15; // first day distance
+    int totalDistance = distance; // total distance
 
     for (int i = 2; i <= days; i++) {
-        distance += 2; // Óâåëè÷èâàåì êàæäûé äåíü íà 2 ñì
-        totalDistance += distance; // Äîáàâèì ïðîéäåííîå ðàññòîÿíèå ê ðàññòîÿíèþ çà äåíü
+        distance += 2; // add 2 cm for each day
+        totalDistance += distance; // add both distances
     }
 
     return totalDistance;
@@ -59,19 +59,19 @@ int calculateTotalDistance(int days) {
 int main() {
     int days;
 
-    // ÂÂÎÄ
-    std::cout << "Ââåäèòå êîëè÷åñòâî äíåé: ";
+    //in
+    std::cout << "Enter the number of days: ";
     std::cin >> days;
 
-    // Âûñ÷èòàòü ðàññòîÿíèå çà ââåäåíîå ÷èñëî äíåé
+    // Calculate the distance for the entered number of days
     int totalDistance = calculateTotalDistance(days);
 
-    // Âûâîä 
-    std::cout << "Óëèòêà ïîëçëà-ïîëçëà è ïðîïîëçëà çà " << days << " äíÿ: " << totalDistance << " ñì" << std::endl;
+    // out
+    std::cout << "The snail crawled slowly and steadily in " << days << " days: " << totalDistance << " cm" << std::endl;
 
     return 0;
 }
-//Çàäàíèå 4.
+//Task 4.
 #include <iostream>
 using namespace std;
 
@@ -79,7 +79,7 @@ int main() {
     int result = 0;
 
     for (int i = 0; i < 9; i++) {
-        cout << "Ââåäèòå 1 (îð¸ë) èëè 0 (ðåøêà): ";
+        cout << "Enter 1 (heads) or 0 (tails): ";
         int coin;
         cin >> coin;
 
@@ -87,63 +87,61 @@ int main() {
     }
 
     if (result % 2 == 0) {
-        cout << "Ðåøåíèå ïîëîæèòåëüíîå.";
+        cout << "Positive decision.";
     }
     else {
-        cout << "Ðåøåíèå îòðèöàòåëüíîå.";
+        cout << "Negative decision.";
     }
 
     return 0;
 }
-//Çàäàíèÿ 5 è 6 
+//Tasks 5 and 6
 
 #include <iostream>
 #include <iomanip>
 
-// Ïðîâåðÿåì âèñîêîñíûé ëè ââåäåíûé ãîä
+// Function to check if a given year is a leap year
 bool isLeapYear(int year) {
     return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
 
-// Ïîëó÷àåì êîëè÷åñòâî äíåé â ìåñÿöå
+// Function to get the number of days in a given month
 int getDaysInMonth(int month, int year) {
     if (month == 2) {
         return isLeapYear(year) ? 29 : 28;
-    }
-    else if (month == 4 || month == 6 || month == 9 || month == 11) {
+    } else if (month == 4 || month == 6 || month == 9 || month == 11) {
         return 30;
-    }
-    else {
+    } else {
         return 31;
     }
 }
 
-// Âûâîäèì êàëåíäàðü
+// Function to display the calendar for a given month
 void displayCalendar(int month, int year, int startDay) {
     int daysInMonth = getDaysInMonth(month, year);
-
-    // Ìåñÿö è ãîä
-    std::cout << "Êàëåíäàðü íà  " << month << "/" << year << std::endl;
-
-    // Âûâîäèì äíè íåäåëè
+    
+    // Output the month and year
+    std::cout << "Calendar for " << month << "/" << year << std::endl;
+    
+    // Output the days of the week
     std::cout << "Mon\tTue\tWed\tThu\tFri\tSat\tSun" << std::endl;
-
-    // Ðàçáèâàåì ïóñòûå êëåòêè
+    
+    // Output the empty cells for the start day
     for (int i = 0; i < startDay; i++) {
         std::cout << "\t";
     }
-
-    // äíè ìåñÿöà
+    
+    // Output the days of the month
     for (int day = 1; day <= daysInMonth; day++) {
         std::cout << day << "\t";
-
-        // íóæíà ëè íîâàÿ ñòðîêà
+        
+        // Check if a new line is needed
         if ((startDay + day) % 7 == 0) {
             std::cout << std::endl;
         }
     }
-
-    // ñ÷èàòàåì âûõîäíûå äíè (ñá è âñ)
+    
+    // Output the number of weekends (Saturdays and Sundays)
     int weekends = 0;
     for (int day = 1; day <= daysInMonth; day++) {
         int dayOfWeek = (startDay + day - 1) % 7;
@@ -151,27 +149,26 @@ void displayCalendar(int month, int year, int startDay) {
             weekends++;
         }
     }
-
-    std::cout << "\nÂûõîäíûõ äíåé â ýòîì ìåñÿöå: " << weekends << std::endl;
+    
+    std::cout << "\nNumber of weekends in the month: " << weekends << std::endl;
 }
 
 int main() {
     int month, year, startDay;
-
-    // Çàäàåì óñëîâèÿ ââîäà
-    std::cout << "Ââåäèòå íîìåð ìåñÿöà (1-12): ";
+    
+    // Input the month, year, and the day of the week number for the beginning of the month
+    std::cout << "Enter the month (1-12): ";
     std::cin >> month;
-
-    std::cout << "Ââåäèòå ãîä â ôîðìàòå ÃÃÃÃ: ";
+    
+    std::cout << "Enter the year: ";
     std::cin >> year;
-
-    std::cout << "Ñ êàêîãî äíÿ íåäåëè íà÷èíàåòñÿ ìåñÿö? (ââåäèòå ÷èñëî 0-6 , 0 = ïîíåäåëüíèê): ";
+    
+    std::cout << "Enter the day of the week number for the beginning of the month (0-6 where 0 is Monday): ";
     std::cin >> startDay;
-
+    
     displayCalendar(month, year, startDay);
-
+    
     return 0;
 }
-
 
 
