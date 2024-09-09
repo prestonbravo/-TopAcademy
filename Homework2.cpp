@@ -1,33 +1,33 @@
-//Çàäàíèå 1.
+//Task 1.
 #include <iostream>
 using namespace std;
 
 int main() {
     int a, sum = 0;
 
-    cout << "Ââåäèòå ÷èñëî a: ";
+    cout << "Enter the number a: ";
     cin >> a;
 
     for (int i = a; i <= 500; i++) {
         sum += i;
     }
 
-    cout << "Ñóììà ÷èñåë îò " << a << " äî 500 ðàâíà " << sum << endl;
+    cout << "The sum of the numbers from " << a << " to 500 is " << sum << endl;
 
     return 0;
 }
 
-//Çàäàíèå 2.
+//Task 2.
 #include <iostream>
 using namespace std;
 
 int main() {
     int x, y;
 
-    cout << "Ââåäèòå ÷èñëî x: ";
+    cout << "Enter the number x: ";
     cin >> x;
 
-    cout << "Ââåäèòå ïîêàçàòåëü ñòåïåíè y: ";
+    cout << "Enter the degree indicator y: ";
     cin >> y;
 
     int result = 1;
@@ -36,12 +36,12 @@ int main() {
         result *= x;
     }
 
-    cout << x << " â ñòåïåíè " << y << " ðàâíî " << result << endl;
+    cout << x << " in degree " << y << " is " << result << endl;
 
     return 0;
 }
 
-//Çàäàíèå 3.
+//Task 3.
 #include <iostream>
 using namespace std;
 
@@ -54,19 +54,19 @@ int main() {
         count++;
     }
 
-    cout << "Ñðåäíåå àðèôìåòè÷åñêîå ÷èñåë îò 1 äî 1000 ðàâíî " << (float)sum / count << endl;
+    cout << "The arithmetic mean of numbers from 1 to 1000 is " << (float)sum / count << endl;
 
     return 0;
 }
 
-//Çàäàíèå 4.
+//Task 4.
 #include <iostream>
 using namespace std;
 
 int main() {
     int a, result = 1;
 
-    cout << "Ââåäèòå ÷èñëî a: ";
+    cout << "Enter the number  a: ";
     cin >> a;
 
     if (a >= 1 && a <= 20) {
@@ -75,15 +75,15 @@ int main() {
         }
     }
     else {
-        cout << "Íåâåðíîå çíà÷åíèå a. Ââåäèòå ÷èñëî îò 1 äî 20." << endl;
+        cout << "Invalid value of a . Enter a number from 1 to 20." << endl;
     }
 
-    cout << "Ïðîèçâåäåíèå ÷èñåë îò " << a << " äî 20 ðàâíî " << result << endl;
+    cout << "The product of numbers from " << a << " up to 20 is equal to " << result << endl;
 
     return 0;
 }
 
-//Çàäàíèå 5. Ïåðâîå ðåøåíèå:
+//Task 5. The first solution:
 #include <iostream>
 using namespace std;
 
@@ -94,13 +94,13 @@ int main() {
 
     return 0;
 }
-//ðåøåíèå ïðè ñâîáîäíîì âûáîðå ÷èñëà:
+//the solution with the free choice of a number:
 #include <iostream>
 using namespace std;
 
 int main() {
     int k;
-    cout << "Ââåäèòå çíà÷åíèå k: ";
+    cout << "Enter a value k: ";
     cin >> k;
 
     for (int i = 1; i <= 10; i++) {
@@ -110,13 +110,13 @@ int main() {
     return 0;
 }
 
-//Çàäàíèå 6.
+//Task 6.
 #include <iostream>
 using namespace std;
 
 int main() {
     int num;
-    cout << "Ââåäèòå ÷èñëî: ";
+    cout << "Enter a number: ";
     cin >> num;
 
     for (int i = 0; i <= num; i++) {
@@ -126,17 +126,17 @@ int main() {
     return 0;
 }
 
-//Çàäàíèå 7. 
+//Task 7. 
 #include <iostream>
 using namespace std;
 
 int main() {
     int min, max;
-    cout << "Ââåäèòå ãðàíèöû äèàïàçîíà: ";
+    cout << "Enter the range boundaries: ";
     cin >> min >> max;
 
     if (min > max) {
-        cout << "Íåâåðíîå çíà÷åíèå ãðàíèö äèàïàçîíà. Ââåäèòå ãðàíèöû â ïîðÿäêå âîçðàñòàíèÿ." << endl;
+        cout << "The value of the range boundaries is incorrect. Enter the boundaries in ascending order." << endl;
         return 0;
     }
 
@@ -157,17 +157,17 @@ int main() {
     return 0;
 }
 
-//Çàäàíèå 8.
+//Task 8.
 #include <iostream>
 using namespace std;
 
 int main() {
     int min, max;
-    cout << "Ââåäèòå ãðàíèöû äèàïàçîíà: ";
+    cout << "Enter the range boundaries: ";
     cin >> min >> max;
 
     if (min > max) {
-        cout << "Íåâåðíîå çíà÷åíèå ãðàíèö äèàïàçîíà. Ââåäèòå ãðàíèöû â ïîðÿäêå âîçðàñòàíèÿ." << endl;
+        cout << "The value of the range boundaries is incorrect. Enter the boundaries in ascending order." << endl;
         return 0;
     }
 
@@ -177,32 +177,32 @@ int main() {
         sum += i;
     }
 
-    cout << "Ñóììà ÷èñåë îò " << min << " äî " << max << " ðàâíà " << sum << endl;
+    cout << "The sum of the numbers from " << min << " up to " << max << " is " << sum << endl;
 
     return 0;
 }
 
-//Çàäàíèå 9. 
+//Task 9. 
 #include <iostream>
 using namespace std;
 
 int main() {
     int num, sum = 0;
 
-    cout << "Ââåäèòå ÷èñëî: ";
+    cout << "Enter a number: ";
     cin >> num;
 
     while (num != 0) {
         sum += num;
-        cout << "Ââåäèòå ÷èñëî: ";
+        cout << "Enter a number: ";
         cin >> num;
     }
 
     if (sum != 0) {
-        cout << "Ñóììà ÷èñåë ðàâíà " << sum << endl;
+        cout << "The sum of the numbers is " << sum << endl;
     }
     else {
-        cout << "Âû ââåëè òîëüêî íîëü. Ñóììà ðàâíà 0." << endl;
+        cout << "You have entered only zero. The sum is 0." << endl;
     }
 
     return 0;
