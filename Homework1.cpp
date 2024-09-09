@@ -1,53 +1,53 @@
-//Çàäàíèå 1.
+//Task 1.In Russian
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    std::cout << "Instasamka - ÇÀ ÄÅÍÜÃÈ ÄÀ\n"
-        << "ß âîîáùå äåëàþ, ÷òî õî÷ó (À)\n"
-        << "Õî÷ó èìïëàíòû — çâîíþ âðà÷ó (Àëë¸)\n"
-        << "Êòî ìåíÿ íå ëþáèò — ÿ âàñ íå ñëûøó (×¸?)\n"
-        << "Âû ïðîñòî ìíå çàâèäóåòå, ÿ ìîë÷ó\n"
-        << "ß íå ìîë÷ó, êîãäà ÿ õî÷ó\n"
-        << "ß íå ïðîäàþñü, íî çà äåíüãè — äà (Äà)\n"
-        << "Ìîé ïðîäþñåð ãîâîðèò: «Òû — ïîï-çâåçäà»\n"
-        << "È êñòàòè, ìîé ïðîäþñåð — ýòî ìîé ìóæ, äà\n";
+    std::cout << "Instasamka - ЗА ДЕНЬГИ ДА\n"
+        << "Я вообще делаю, что хочу (А)\n"
+        << "Хочу импланты — звоню врачу (Аллё)\n"
+        << "Кто меня не любит — я вас не слышу (Чё?)\n"
+        << "Вы просто мне завидуете, я молчу\n"
+        << "Я не молчу, когда я хочу\n"
+        << "Я не продаюсь, но за деньги — да (Да)\n"
+        << "Мой продюсер говорит: «Ты — поп-звезда»\n"
+        << "И кстати, мой продюсер — это мой муж, да\n";
 
     return 0;
 }
-//Çàäàíèå 2.
+//Task 2. In Russian
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    std::cout << "Êàæäûé" << "\n"
-        << "\tÎõîòíèê" << "\n"
-        << "\t\tÆåëàåò" << "\n"
-        << "\t\t\tÇíàòü" << "\n"
-        << "\t\t\t\t Ãäå" << "\n"
-        << "\t\t\t\t\tÑèäèò" << "\n"
-        << "\t\t\t\t\t\t\tÔàçàí" << "\n\n";
+    std::cout << "Каждый" << "\n"
+        << "\tОхотник" << "\n"
+        << "\t\tЖелает" << "\n"
+        << "\t\t\tЗнать" << "\n"
+        << "\t\t\t\t Где" << "\n"
+        << "\t\t\t\t\tСидит" << "\n"
+        << "\t\t\t\t\t\t\tФазан" << "\n\n";
 
     return 0;
 }
 
-//Çàäàíèå 3.
+//Task  3. In Russian
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    std::cout << "Ñíèìó êâàðòèðó!\n";
-    << "Èùó êîìôîðòíîå æèëü¸ â õîðîøåì ðàéîíå.\n";
-    << "Ìîé íîìåð òåëåôîíà: +7 (999) 999-99-99.\n";
-    << "Çâîíèòü ñ 9:00 äî 21:00.\n";
-    << "Â ëþáîå âðåìÿ. Îáðàùàòüñÿ ìîæíî â ìåññåíäæåðàõ.";
+    std::cout << "Сниму квартиру!\n";
+    << "Ищу комфортное жильё в хорошем районе.\n";
+    << "Мой номер телефона: +7 (999) 999-99-99.\n";
+    << "Звонить с 9:00 до 21:00.\n";
+    << "В любое время. Обращаться можно в мессенджерах.";
     return 0;
 }
 
-//Çàäàíèå 4.
+//Task 4.
 #include <iostream>
 using namespace std;
 
@@ -58,15 +58,15 @@ int main()
     R2 = 4;
     R3 = 8;
 
-    // Âû÷èñëÿåì çíà÷åíèå R0
+    // Calculating the value R0
     R0 = 1 / (1 / R1 + 1 / R2 + 1 / R3);
 
-    cout << "Çíà÷åíèå R0: " << R0 << endl;
+    cout << "Value R0: " << R0 << endl;
 
     return 0;
 }
 
-//Çàäàíèå 5. 
+//Task 5 5. 
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -76,117 +76,117 @@ int main()
     double L, R, S;
     const double PI = 3.14;
 
-    // Ââîäèì äëèíó îêðóæíîñòè
-    cout << "Ââåäèòå äëèíó îêðóæíîñòè: ";
+    // entering the length of the circle
+    cout << "Enter the length of the circle: ";
     cin >> L;
 
-    // Âû÷èñëÿåì ðàäèóñ îêðóæíîñòè
+    // Calculate the radius of the circle
     R = L / (2 * PI);
 
-    // Âû÷èñëÿåì ïëîùàäü êðóãà
+    // Calculating the area of the circle
     S = PI * pow(R, 2);
 
-    cout << "Ðàäèóñ îêðóæíîñòè: " << R << endl;
-    cout << "Ïëîùàäü êðóãà: " << S << endl;
+    cout << "Radius of the circle: " << R << endl;
+    cout << "Area of the circle: " << S << endl;
 
     return 0;
 }
-//Çàäàíèå 6.
+//Task 6.
 #include <iostream>
 using namespace std;
 
 int main()
 {
     double v, a, t, s;
-    cout << "Ââåäèòå ñêîðîñòü: ";
+    cout << "Enter the speed: ";
     cin >> v;
-    cout << "Ââåäèòå óñêîðåíèå: ";
+    cout << "Enter the acceleration: ";
     cin >> a;
-    cout << "Ââåäèòå âðåìÿ: ";
+    cout << "Enter the time: ";
     cin >> t;
 
-    // Âû÷èñëÿåì ïðîéäåííîå ðàññòîÿíèå
+    // Calculating the distance traveled
     s = v * t + (a * t * t) / 2;
 
-    cout << "Ïðîéäåííîå ðàññòîÿíèå: " << s << endl;
+    cout << "Distance traveled: " << s << endl;
 
     return 0;
 }
 
-//Çàäàíèå 7.
+//Task  7.
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    double distance_to_airport; // ðàññòîÿíèå äî àýðîïîðòà â êì
-    double time_to_arrive; // âðåìÿ, çà êîòîðîå íóæíî äîåõàòü â ÷àñàõ
-    double speed; // ñêîðîñòü, ñ êîòîðîé íóæíî åõàòü â êì/÷
+    double distance_to_airport; // distance to the airport in km
+    double time_to_arrive; // the time it takes  in hours
+    double speed; // the speed  to drive in km/h
 
-    cout << "Ââåäèòå ðàññòîÿíèå äî àýðîïîðòà: ";
+    cout << "Enter the distance to the airport: ";
     cin >> distance_to_airport;
 
-    cout << "Ââåäèòå âðåìÿ, çà êîòîðîå íóæíî äîåõàòü: ";
+    cout << "Enter the time you need to get there: ";
     cin >> time_to_arrive;
 
     speed = distance_to_airport / time_to_arrive;
-    cout << "Âàì íóæíî åõàòü ñî ñêîðîñòüþ " << speed << " êì/÷.";
+    cout << "You need to drive with speed of " << speed << " km/h.";
 
     return 0;
 }
 
-//Çàäàíèå 8.
+//Task 8.
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int start_hour, start_minute, start_second; // âðåìÿ íà÷àëà ðàçãîâîðà â ôîðìàòå ××:ÌÌ:ÑÑ
-    int end_hour, end_minute, end_second; // âðåìÿ çàâåðøåíèÿ ðàçãîâîðà â ôîðìàòå ××:ÌÌ:ÑÑ
+    int start_hour, start_minute, start_second; // the start time of the call HH:ММ:SS
+    int end_hour, end_minute, end_second; // the end time of the call HH:ММ:SS
 
-    cout << "Ââåäèòå âðåìÿ íà÷àëà ðàçãîâîðà (××:ÌÌ:ÑÑ): ";
+    cout << "Enter the start time of the call (HH:ММ:SS): ";
     cin >> start_hour >> start_minute >> start_second;
 
-    cout << "Ââåäèòå âðåìÿ çàâåðøåíèÿ ðàçãîâîðà (××:ÌÌ:ÑÑ): ";
+    cout << "Enter the end time of the call (HH:ММ:SS): ";
     cin >> end_hour >> end_minute >> end_second;
 
-    // âû÷èñëÿåì ðàçíèöó âî âðåìåíè
+    // calculating the time difference
     int total_seconds = (end_hour * 3600 + end_minute * 60 + end_second) - (start_hour * 3600 + start_minute * 60 + start_second);
 
-    // âû÷èñëÿåì ñòîèìîñòü ðàçãîâîðà
+    // calculating the cost of the call
     double cost = total_seconds * 0.3;
 
-    cout << "Ñòîèìîñòü ðàçãîâîðà: " << cost << " ðóáëåé.";
+    cout << "Cost of the call: " << cost << " rubles.";
 
     return 0;
 }
 
-//Çàäàíèå 9.
+//Task 9.
 #include <iostream>
 using namespace std;
 
 int main() {
-    int distance; // ðàññòîÿíèå â êì
-    double fuel_consumption; // ðàñõîä áåíçèíà íà 100 êì
-    double cost_1, cost_2, cost_3; // ñòîèìîñòü òð¸õ âèäîâ áåíçèíà
+    int distance; // distance in km
+    double fuel_consumption; // fuel consumption per 100 km
+    double cost_1, cost_2, cost_3; // the cost of three types of fuel
 
-    cout << "Ââåäèòå ðàññòîÿíèå: ";
+    cout << "Enter the distance: ";
     cin >> distance;
 
-    cout << "Ââåäèòå ðàñõîä áåíçèíà íà 100 êì: ";
+    cout << "Enter the fuel consumption per 100 km : ";
     cin >> fuel_consumption;
 
-    cout << "Ââåäèòå ñòîèìîñòü òð¸õ âèäîâ áåíçèíà: ";
+    cout << "Enter the the cost of three types of fuel: ";
     cin >> cost_1 >> cost_2 >> cost_3;
 
-    // âû÷èñëÿåì ñòîèìîñòü ïîåçäêè íà êàæäîì âèäå áåíçèíà
+    // calculating the cost of a trip for each type of fuel
     double cost_1_trip = distance / 100 * cost_1 * fuel_consumption;
     double cost_2_trip = distance / 100 * cost_2 * fuel_consumption;
     double cost_3_trip = distance / 100 * cost_3 * fuel_consumption;
 
-    // âûâîäèì ñðàâíèòåëüíóþ òàáëèöó
-    cout << "\nÑðàâíèòåëüíàÿ òàáëèöà ñòîèìîñòè ïîåçäêè íà ðàçíûõ âèäàõ áåíçèíà:\n";
-    cout << "| Âèä áåíçèíà | Ñòîèìîñòü áåíçèíà | Ñòîèìîñòü ïîåçäêè |\n";
+    // showing comparison table
+    cout << "\nA comparative table of the cost of a trip on different types of fuel:\n";
+    cout << "| Type of fuel | Cost of fuel | Cost of a trip |\n";
     cout << "|-------------|-------------------|------------------|\n";
     cout << "| 1           | " << cost_1 << "    | " << cost_1_trip << " |\n";
     cout << "| 2           | " << cost_2 << "    | " << cost_2_trip << " |\n";
